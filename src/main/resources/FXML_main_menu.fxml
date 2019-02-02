@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="217.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLMainMenuController">
+   <children>
+      <Accordion layoutX="56.0" layoutY="125.0" />
+      <ComboBox fx:id="comboBox1" layoutX="138.0" layoutY="35.0" prefHeight="25.0" prefWidth="242.0" onAction="#chooseCur"/>
+      <ComboBox fx:id="comboBox2" layoutX="505.0" layoutY="35.0" prefWidth="150.0" onAction="#comboBoxAction2"/>
+      <ComboBox fx:id="comboBox3" layoutX="598.0" layoutY="70.0" prefHeight="25.0" prefWidth="72.0" onAction="#comboBoxAction3"/>
+      <Text layoutX="203.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="34.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kurs" />
+      <Text layoutX="580.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="w" />
+      <Text layoutX="427.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Czas kursu" />
+      <Text layoutX="34.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="34.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybrana waluta" />
+      <Text fx:id="dataText" layoutX="33.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" />
+      <TextField fx:id="fdCurText1" layoutX="77.0" layoutY="70.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField fx:id="fdCurText2" layoutX="384.0" layoutY="70.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField fx:id="fdCurText3" layoutX="284.0" layoutY="70.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField fx:id="fdCurText4" layoutX="182.0" layoutY="70.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField fx:id="fdCurText5" layoutX="482.0" layoutY="70.0" prefHeight="25.0" prefWidth="85.0" />
+
+      <ComboBox fx:id="comboBox4" layoutX="77.0" layoutY="113.0" prefWidth="150.0" onAction="#comboBox4Action"/>
+
+      <Button fx:id="buttonExit" layoutX="395.0" layoutY="160.0" mnemonicParsing="false" text="Wyloguj" onAction="#logoutButton"/>
+      <Button  layoutX="318.0" layoutY="160.0" mnemonicParsing="false" text="Ustawienia" onAction="#settingsButton"/>
+      <Button layoutX="482.0" layoutY="160.0" mnemonicParsing="false" text="Wyjdź" onAction="#exitButton"/>
+
+      <Text fx:id="dataText2" layoutX="256.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metoda" />
+      <ComboBox fx:id="comboBox5" layoutX="294.0" layoutY="113.0" prefWidth="150.0" onAction="#comboBox5Action"/>
+   </children>
+</AnchorPane>

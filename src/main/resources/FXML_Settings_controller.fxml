@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="203.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Settings_controller">
+   <children>
+      <Text layoutX="30.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwa konta" />
+      <Text layoutX="30.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasło" />
+      <RadioButton id="showPswd" layoutX="33.0" layoutY="95.0" mnemonicParsing="false" text="pokaż hasło" onAction="#showPswd"/>
+      <PasswordField id="passExp" layoutX="123.0" layoutY="62.0" />
+      <TextField id="passwd" layoutX="123.0" layoutY="62.0" />
+      <TextField id="accountName" layoutX="123.0" layoutY="31.0" />
+      <Text layoutX="34.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metoda" />
+      <ComboBox id="methodBox" layoutX="123.0" layoutY="154.0" prefWidth="150.0" />
+      <Text layoutX="35.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ustawienia" />
+      <Text layoutX="300.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Konwersja walut" />
+      <Text layoutX="300.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" />
+      <Text layoutX="301.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kurs" />
+      <ComboBox id="dateComboBox" layoutX="343.0" layoutY="154.0" prefWidth="150.0" />
+      <ComboBox id="courseId" layoutX="343.0" layoutY="121.0" prefWidth="150.0" />
+      <Button id="Alerts" layoutX="31.0" layoutY="121.0" mnemonicParsing="false" text="Alerty" />
+      <Button id="Menu" layoutX="86.0" layoutY="121.0" mnemonicParsing="false" text="Menu" onAction="#goToMenu"/>
+      <Button id="Logout" layoutX="145.0" layoutY="121.0" mnemonicParsing="false" text="Wyloguj" onAction="#logOut"/>
+      <Button id="Exit" layoutX="212.0" layoutY="121.0" mnemonicParsing="false" text="Wyjdź" onAction="#exit"/>
+      <TextField id="currConvertInput" layoutX="301.0" layoutY="40.0" prefHeight="25.0" prefWidth="76.0" />
+      <TextField id="currConvertOutput" layoutX="418.0" layoutY="39.0" prefHeight="25.0" prefWidth="76.0" />
+      <ComboBox id="currConvertInputComboBox" layoutX="302.0" layoutY="70.0" prefHeight="25.0" prefWidth="76.0" />
+      <ComboBox id="currConvertOutputComboBox" layoutX="418.0" layoutY="70.0" prefHeight="25.0" prefWidth="76.0" />
+      <Text layoutX="395.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+   </children>
+</AnchorPane>
